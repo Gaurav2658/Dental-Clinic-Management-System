@@ -1,0 +1,475 @@
+﻿@model DataAccessLibrary.Model.CaseMaster
+
+@{
+    ViewData["Title"] = "CaseCreate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<head>
+	<style>
+		table.table td {
+			padding-top: 1px;
+			padding-bottom: 1px;
+		}
+
+		table.table th {
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+	</style>
+
+</head>
+
+@section styles{
+	<!-- Select2 -->
+	<link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+	<link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+
+}
+@using (Html.BeginForm("CaseCreate", "CaseMaster", FormMethod.Post))
+{
+<form class="needs-validation" novalidate method="post">
+
+	<section class="content">
+
+		<div class="card card-primary">
+			<div class="card-body">
+				<div class="col-md-12">
+					<!-- Form Element sizes -->
+					<div>
+						<div class="d-flex justify-content-between align-items-center">
+							<h4><b><u>Add Case:</u></b></h4>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+
+					<div class="form-group col-md-4">
+						<label asp-for="CNo">CNo</label>
+						<input asp-for="CNo" class="form-control" />
+						<span asp-validation-for="CNo" class="text-danger"></span>
+					</div>
+					<div class="form-group col-md-4">
+						<label asp-for="PhonNo">PhoneNo</label>
+						<select asp-for="PhonNo" asp-items="ViewBag.Phone" class="form-control custom-select js-example-basic-single">
+							<option value="">--Select PhoneNo--</option>
+						</select>
+					</div>
+					<div class="form-group col-md-4">
+						<label asp-for="PId">Patient</label>
+						<select asp-for="PId" asp-items="ViewBag.Pat" class="form-control custom-select js-example-basic-single">
+							<option value="">--Select Patient--</option>
+						</select>
+					</div>
+					<div class="form-group col-md-4">
+						<label asp-for="DId">Doctor</label>
+						<select asp-for="DId" asp-items="ViewBag.User" class="form-control custom-select js-example-basic-single">
+							<option value="">--Select Doctor--</option>
+						</select>
+					</div>
+
+					<div class="form-group col-md-4">
+						<label asp-for="Date" class="control-label"></label>
+						<input asp-for="Date" type="date" class="form-control" />
+						<span asp-validation-for="Date" class="text-danger"></span>
+					
+					
+					</div>
+				</div>
+				
+			</div>
+			<!-- /.card-body -->
+		</div>
+
+
+			@*<form class="needs-validation" novalidate>
+			*@
+					<div class="row">
+						<!-- left column -->
+
+						<div class="col-md-6">
+							<!-- general form elements -->
+							<div class="card card">
+								<div class="card-header">
+									<h3 class="card-title">Complaint</h3>
+								</div>
+								<!-- /.card-header -->
+								<!-- form start -->
+								@*<form>*@
+									<div class="card-body ">
+										<div class="form-row col-md-12">
+											<div class="form-group col-md-4">
+												<label for="Patient Name">Complient</label>
+												<select class="js-example-basic-single col-md-" name="Number" style="width: 200px;">
+													@*<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>*@
+													@*<option>Wyoming</option>*@
+												</select>
+											</div>
+
+											@*<div class="form-group mb-2" style="padding: 32px 0px 0px 58px;">
+												<button type="submit" class="btn btn-primary btn-md">Add</button>
+											</div>
+											<div class="col-md-12">
+												<div class="table-responsive">
+													<table class="table table-bordered table-striped">
+														<thead>
+															<tr>
+																<th>Complaint</th>
+																<th>Action</th>
+
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+
+																<td></td>
+																<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+															</tr>
+															<tr>
+
+																<td></td>
+																<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>*@
+										</div>
+									</div>
+@*								</form>
+*@							</div>
+							<!-- /.card-body -->
+						</div>
+
+
+						<!-- /.card -->
+
+
+						<div class="col-md-6">
+							<!-- general form elements -->
+							<div class="card card">
+								<div class="card-header">
+									<h3 class="card-title">Observation</h3>
+								</div>
+								<!-- /.card-header -->
+								<!-- form start -->
+								@*<form>*@
+									<div class="card-body ">
+										<div class="form-row col-md-12">
+								<div class="form-group col-md-3">
+									<label for="Teeth Number">Teeth No</label>
+									<input type="text" placeholder="Teeth No" class="form-control" id="Case Number">
+								</div>
+											<div class="form-group col-md-3">
+												<label for="Patient Name">Observation</label>
+												<select class="js-example-basic-single col-md-" name="state" style="width: 200px;">
+												@*	<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Wyoming</option>*@
+												</select>
+											</div>
+
+											@*<div class="form-group mb-2" style="padding: 32px 0px 0px 100px;">
+												<button type="submit" class="btn btn-primary btn-md">Add</button>
+											</div>
+											<div class="col-md-12">
+												<div class="table-responsive">
+													<table class="table table-bordered table-striped">
+														<thead>
+															<tr>
+																<th>Id</th>
+																<th>Observation</th>
+																<th>Action</th>
+
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td></td>
+																<td></td>
+																<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+															</tr>
+															<tr>
+																<td></td>
+																<td></td>
+																<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>*@
+										</div>
+									</div>
+								@*</form>*@
+							</div>
+							<!-- /.card-body -->
+						</div>
+
+
+						<!-- /.card -->
+
+
+
+						<div class="col-md-6">
+							<!-- general form elements -->
+							<div class="card card">
+								<div class="card-header">
+									<h3 class="card-title">Advice</h3>
+								</div>
+								<!-- /.card-header -->
+								<!-- form start -->
+							@*	<form>*@
+									<div class="card-body ">
+										<div class="form-row col-md-12">
+								<div class="form-group col-md-3">
+									<label for="Teeth Number">Teeth No</label>
+									<input type="text" placeholder="Teeth No" class="form-control" id="Case Number">
+								</div>
+											<div class="form-group col-md-3">
+												<label for="Advice">Advice</label>
+												<select class="js-example-basic-single col-md-" name="state" style="width: 200px;">
+													@*<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Alabama</option>
+													<option>Wyoming</option>*@
+												</select>
+											</div>
+
+											@*<div class="form-group mb-2" style="padding: 32px 0px 0px 100px;">
+												<button type="submit" class="btn btn-primary btn-md">Add</button>
+											</div>
+											<div class="col-md-12">
+												<div class="table-responsive">
+													<table class="table table-bordered table-striped">
+														<thead>
+															<tr>
+																<th>Id</th>
+																<th>Advice</th>
+																<th>Action</th>
+
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td></td>
+																<td></td>
+																<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+															</tr>
+															<tr>
+																<td></td>
+																<td></td>
+																<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>*@
+										</div>
+									</div>
+								@*</form>*@
+							</div>
+							<!-- /.card-body -->
+						</div>
+
+
+						<!-- /.card -->
+
+
+
+
+
+						<div class="col-md-6">
+							<!-- general form elements -->
+							<div class="card card">
+								<div class="card-header">
+									<h3 class="card-title">Treatment</h3>
+								</div>
+								<!-- /.card-header -->
+								<!-- form start -->
+								@*<form>*@
+									<div class="card-body ">
+										<div class="form-row col-md-12">
+								<div class="form-group col-md-3">
+									<label for="Teeth Number">Teeth No</label>
+									<input type="text" placeholder="Teeth No" class="form-control" id="Case Number">
+								</div>
+											<div class="form-group col-md-4">
+												<label for="Service">Treatment</label>
+												<select id="Service" class="form-control custom-select js-example-basic-single" name="Treatment">
+
+													@*<option value="">Select Treatment</option>
+													<option value="Service1">Service1</option>
+													<option value="Service2">Service2</option>
+													<option value="Service3">Service3</option>
+													<option value="Service4">Service4</option>
+*@
+												</select>
+											</div>
+											<div class="form-group col-md-3">
+												<label for="discharge-date">Rate</label>
+												<input type="text" placeholder="Rate" class="form-control" id="Rate">
+											</div>
+											@*<div class="form-group mb-2" style="padding: 32px 0px 0px 0px;">
+												<button type="submit" class="btn btn-primary btn-md">Add</button>
+											</div>
+											<div class="col-md-12">
+												<div class="table-responsive">
+													<table class="table table-bordered table-striped">
+														<thead>
+															<tr>
+																<th>Id</th>
+																<th>Treatment</th>
+																<th>Rate</th>
+																<th>Action</th>
+
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+															</tr>
+															<tr>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>*@
+										</div>
+									</div>
+							@*	</form>*@
+							</div>
+							<!-- /.card-body -->
+						</div>
+
+
+						<!-- /.card -->
+
+
+
+				<div class="col-md-6">
+					<!-- general form elements -->
+					<div class="card card">
+						<div class="card-header">
+							<h3 class="card-title">Treatment</h3>
+						</div>
+						<!-- /.card-header -->
+						<!-- form start -->
+						@*<form>*@
+						<div class="card-body ">
+							<div class="form-row col-md-12">
+								<div class="form-group col-md-3">
+									<label for="Teeth Number">Teeth No</label>
+									<input type="text" placeholder="Teeth No" class="form-control" id="Case Number">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="Service">Treatment</label>
+									<select id="Service" class="form-control custom-select js-example-basic-single" name="Treatment">
+
+										@*<option value="">Select Treatment</option>
+									<option value="Service1">Service1</option>
+									<option value="Service2">Service2</option>
+									<option value="Service3">Service3</option>
+									<option value="Service4">Service4</option>
+									*@
+									</select>
+								</div>
+								<div class="form-group col-md-3">
+									<label for="discharge-date">Rate</label>
+									<input type="text" placeholder="Rate" class="form-control" id="Rate">
+								</div>
+								@*<div class="form-group mb-2" style="padding: 32px 0px 0px 0px;">
+							<button type="submit" class="btn btn-primary btn-md">Add</button>
+							</div>
+							<div class="col-md-12">
+							<div class="table-responsive">
+							<table class="table table-bordered table-striped">
+							<thead>
+							<tr>
+							<th>Id</th>
+							<th>Treatment</th>
+							<th>Rate</th>
+							<th>Action</th>
+
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+							</tr>
+							<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><a href="/Clinic/Delete"><i class="fas fa-trash"></i></a></td>
+							</tr>
+							</tbody>
+							</table>
+							</div>
+							</div>*@
+							</div>
+						</div>
+						@*	</form>*@
+					</div>
+					<!-- /.card-body -->
+				</div>
+
+
+
+
+
+
+			
+
+					
+					
+					<div class="col-2">
+				       <input type="submit" value="Save" class="btn btn-success float-left" style="margin-right: 10px;" />
+				<a href="\CaseMaster\GetAllCase" class="btn btn-secondary float-left" style="margin-right: 10px;">Back</a>
+
+					</div>
+						<!-- /.card -->
+						@*<div class="col-2">
+							<a href="\Clinic\Case" type="Submit" class="btn btn-success float-left">Submit</a>
+						</div>
+
+*@	
+					
+			
+				
+ 	</form>
+}
+
+
+@section scripts{
+	<!-- Select2 -->
+	<script src="~/plugins/select2/js/select2.full.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2();
+		});
+	</script>
+}

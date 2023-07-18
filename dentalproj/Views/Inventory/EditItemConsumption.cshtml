@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "EditItemConsumption";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="needs-validation" novalidate>
+        <section class="content">
+
+            <div class="card card-primary">
+                <div class="card-body">
+                    <div class="col-md-12">
+                        <!-- Form Element sizes -->
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4><b><u>Edit Consumption:</u></b></h4>
+                            </div>
+                        </div>
+                    </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="Item Name">Item Name</label>
+                        <input type="text" id="Item Name" placeholder="Item Name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Category">Category</label>
+                        <input type="text" id="Category" placeholder="Category" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Available Qty">Available Qty</label>
+                        <input type="text" id="Available Qty" placeholder="Available Qty" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Rate</label>
+                        <input type="text" id="Rate" placeholder="Rate" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Amount</label>
+                        <input type="text" id="Amount" placeholder="Amount" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Active">Active</label>
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <a href="\Inventory\EditItemConsumption" class="btn btn-secondary float-left" style="margin-right: 10px;">Cancel</a>
+                    <a href="\Inventory\ItemConsumption" type="Submit" class="btn btn-success float-left">Update</a>
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+</div>
+

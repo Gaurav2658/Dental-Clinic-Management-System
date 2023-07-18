@@ -1,0 +1,210 @@
+﻿
+@{
+    ViewData["Title"] = "Patient";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section styles{
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+}
+<div class="card">
+    <div class="col-md-12">
+        <div class="card-header">
+        <!-- Form Element sizes -->
+        <div class="d-flex justify-content-between align-items-center">
+                <h2><b>Patient List</b></h2>
+                <div>
+                    <a href="\Clinic\AddPatient" class="btn btn-block btn-outline-primary">Add Patient</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Registration Number</th>
+                        <th>Patient Name</th>
+                        <th>Age</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trident@gmail.com</td>
+                        <td>123</td>
+                        <td>hitesh</td>
+                        <td>doctor</td>
+                        <td>Surat</td>
+
+                        <td>Active</td>
+                        <td>
+                            <a href="/Clinic/View"><i class="fas fa-eye"></i></a>
+                            <a href="/Clinic/EditPatient">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+
+                            </a>
+                            <a href="/Clinic/Delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hitesh@gmail.com</td>
+                        <td>123</td>
+                        <td>hitesh</td>
+                        <td>doctor</td>
+                        <td>Surat</td>
+
+                        <td>Active</td>
+                        <td>
+                            <a href="/Clinic/View"><i class="fas fa-eye"></i></a>
+                            <a href="/Clinic/EditPatient">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+
+                            </a>
+                            <a href="/Clinic/Delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>satish@gmail.com</td>
+                        <td>133</td>
+                        <td>satish</td>
+                        <td>doctor</td>
+                        <td>vadodra</td>
+
+                        <td>Pending</td>
+                        <td>
+                            <a href="/Clinic/View"><i class="fas fa-eye"></i></a>
+                            <a href="/Clinic/EditPatient">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+
+                            </a>
+                            <a href="/Clinic/Delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dipika@gmail.com</td>
+                        <td>765</td>
+                        <td>dipika</td>
+                        <td>Receptionist</td>
+                        <td>Ahmdabad</td>
+
+                        <td>Pending</td>
+                        <td>
+                            <a href="/Clinic/View"><i class="fas fa-eye"></i></a>
+                            <a href="/Clinic/EditPatient">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+
+                            </a>
+                            <a href="/Clinic/Delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>mukesh@gmail.com</td>
+                        <td>566</td>
+                        <td>mukesh</td>
+                        <td>doctor</td>
+                        <td>vadodra</td>
+
+                        <td>Pending</td>
+                        <td>
+                            <a href="/Clinic/View"><i class="fas fa-eye"></i></a>
+                            <a href="/Clinic/EditPatient">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+
+                            </a>
+                            <a href="/Clinic/Delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>meenu@gmail.com</td>
+                        <td>123</td>
+                        <td>hitesh</td>
+                        <td>receptionist</td>
+                        <td>mumbai</td>
+
+                        <td>Active</td>
+                        <td>
+                            <a href="/Clinic/View"><i class="fas fa-eye"></i></a>
+                            <a href="/Clinic/EditPatient">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+
+                            </a>
+                            <a href="/Clinic/Delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trident@gmail.com</td>
+                        <td>123</td>
+                        <td>hitesh</td>
+                        <td>doctor</td>
+                        <td>Surat</td>
+
+                        <td>Active</td>
+                        <td>
+                            <a href="/Clinic/View"><i class="fas fa-eye"></i></a>
+                            <a href="/Clinic/EditPatient">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+
+                            </a>
+                            <a href="/Clinic/Delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    </div>
+    @section scripts{
+        <script src="~/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="~/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="~/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+        <script src="~/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="~/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+        <script src="~/plugins/jszip/jszip.min.js"></script>
+        <script src="~/plugins/pdfmake/pdfmake.min.js"></script>
+        <script src="~/plugins/pdfmake/vfs_fonts.js"></script>
+        <script src="~/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+        <script src="~/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+        <script src="~/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+        <script>
+            $(function () {
+                $("#example1").DataTable({
+                    "responsive": true, "lengthChange": false, "autoWidth": false,
+                    "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+                $('#example2').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": false,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                });
+            });
+
+
+        </script>
+    }
+

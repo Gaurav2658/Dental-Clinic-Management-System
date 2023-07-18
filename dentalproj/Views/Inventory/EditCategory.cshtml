@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "EditCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="needs-validation" novalidate>
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Edit Category:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name" placeholder="Name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Order By">Order By</label>
+                        <input type="text" id="Order By" placeholder="Order By" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4" style="padding: 35px 0px 0px 0px;">
+                        <label for="Active">Active</label>
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <a href="\Inventory\EditCategory" class="btn btn-secondary float-left" style="margin-right: 10px;">Cancel</a>
+                    <a href="\Inventory\CategoryList" type="Submit" class="btn btn-success float-left">Update</a>
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+

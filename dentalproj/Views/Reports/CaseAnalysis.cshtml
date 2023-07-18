@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewData["Title"] = "CaseAnalysis";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+}
+
+<form class="needs-validation" novalidate>
+
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Case Analysis:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="Patient">Patient</label>
+                        <select id="Patient" class="form-control">
+                            <option selected>Select Patient</option>
+                            <option>p1</option>
+                            <option>p2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="Doctor">Doctor</label>
+                        <select id="Doctor" class="form-control">
+                            <option selected>Select Doctor</option>
+                            <option>d1</option>
+                            <option>d2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>From Date</label>
+                        <input type="date" id="From Date" placeholder="From Date" class="form-control">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>To Date</label>
+                        <input type="date" id="To Date" placeholder="To Date" class="form-control">
+                    </div>
+                    <div class="col-2" style="align-self:center">
+                        <a href="" type="Submit" class="btn btn-success float-left">Search</a>
+                    </div>
+                    <div class="card-body">
+
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Case No</th>
+                                    <th>Patient Name</th>
+                                    <th>Doctor Name</th>
+                              
+                                    <th>CaseDate</th>
+                                    <th>Visit</th>
+                                   
+                                    <th>Amount</th>
+                                    <th>Discount</th>
+                                    <th>Due</th>
+                                    <th>Total Amount</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  
+                                    <td>104</td>
+                                    <td>hitesh</td>
+                                    <td>101</td>
+                                   
+                                    <td>3/3/23</td>
+                                  
+                                    <td>5/5/23</td>
+                                    <td>3000</td>
+                                    <td>5%</td>
+                                    <td>1000</td>
+                                    <th>4000</th>
+                                 
+                                    
+
+                                </tr>
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+
+@section scripts{
+    <script src="~/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/plugins/jszip/jszip.min.js"></script>
+    <script src="~/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+
+
+    </script>
+}
+
+
+
+

@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewData["Title"] = "AddPayment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@section styles{
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+
+}
+
+<form class="needs-validation" novalidate>
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Add Payment:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group col-md-4">
+                    <label for="Created By">Payable</label>
+                    <input type="text" id="Payment Done" placeholder="Payment Done" class="form-control">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="Created By">Pay Amount</label>
+                    <input type="text" id="Pay Amount" placeholder="Pay Amount" class="form-control">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="Discount">Due Payment</label>
+                    <input type="text" id="Due Payment" placeholder="Due Payment" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="Type">Status</label>
+                    <select id="Type" class="form-control">
+                        <option selected>Select Status</option>
+                        <option>Paid</option>
+                        <option>partially Paid</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="Type">Payment Type</label>
+                    <select id="Type" class="form-control">
+                        <option selected>Select type</option>
+                        <option>Cash</option>
+                        <option>Check</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <a href="\Account\AllPayment" type="Submit" class="btn btn-success float-left" style="margin-right: 10px;">Submit</a>
+                <a href="\Account\AllPayment" class="btn btn-secondary float-left" style="margin-right: 10px;">Back</a>
+
+            </div>
+        </div>
+        <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+
+@section scripts{
+    <!-- Select2 -->
+    <script src="~/plugins/select2/js/select2.full.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+    }

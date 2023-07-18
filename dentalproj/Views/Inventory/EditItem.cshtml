@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "EditItem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="needs-validation" novalidate>
+     <section class="content">
+            
+        <div class="card card-primary">
+            <div class="card-body">
+                 <div class="col-md-12">
+            <!-- Form Element sizes -->
+            <div>
+                <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Edit Item:</u></b></h4>
+                </div>
+            </div>
+        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="Base Name">Base Name</label>
+                        <input type="text" id="Base Name" placeholder="Base Name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Item Name">Item Name</label>
+                        <input type="text" id="Item Name" placeholder="Item Name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Unit">Unit</label>
+                        <input type="text" id="Unit" placeholder="Unit" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Re-Order Level">Re-Order Level</label>
+                        <input type="text" id="Re-Order Level" placeholder="Re-Order Level" class="form-control">
+                    </div>
+                  
+                </div>
+                <div class="col-2">
+                    <a href="\Inventory\EditItem" class="btn btn-secondary float-left" style="margin-right: 10px;">Cancel</a>
+                    <a href="\Inventory\Item" type="Submit" class="btn btn-success float-left">Submit</a>
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+</div>
+

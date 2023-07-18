@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewData["Title"] = "AddItemConsumption";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section styles{
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+
+}
+    <form class="needs-validation" novalidate>
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Edit Consumption:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+                    <div class="form-row">
+                         <div class="form-group col-md-4">
+                            <label for="Item">Item Name</label>
+                            <select id="Item" class="form-control custom-select js-example-basic-single" name="Item">
+                                
+                             <option value="">Select Item</option>
+                            <option value="Item2">Item2</option>
+                            <option value="Item3">Item3</option>
+                            <option value="Item4">Item4</option>
+                            <option value="Item5">Item5</option>
+                            <option value="Item6">Item6</option>
+                            <option value="Item7">Item7</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                        <label for="Category">Category</label>
+                        <select id="Category" class="form-control custom-select js-example-basic-single" name="Category">
+                                
+                                <option value="">Select Category</option>
+                                <option value="Alabama">Alabama</option>
+                                <option value="Alaska">Alaska</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="Arkansas">Arkansas</option>
+                                <option value="California">California</option>
+                                <option value="Wyoming">Wyoming</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="AvailableQty">Available Qty</label>
+                            <input type="text" id="AvailableQty" placeholder="Available Qty" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="Rate">Rate</label>
+                            <input type="text" id="Rate" placeholder="Rate" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="Amount">Amount</label>
+                            <input type="text" id="Amount" placeholder="Amount" class="form-control">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="Active">Active</label>
+                            <input type="checkbox" id="Active">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <a href="\Inventory\AddItemConsumption" class="btn btn-secondary float-left" style="margin-right: 10px;">Cancel</a>
+                        <a href="\Inventory\ItemConsumption" type="Submit" class="btn btn-success float-left">Submit</a>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </section>
+    </form>
+
+@section scripts{
+    <!-- Select2 -->
+    <script src="~/plugins/select2/js/select2.full.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+    }

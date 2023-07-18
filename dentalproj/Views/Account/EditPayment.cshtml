@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewData["Title"] = "EditPayment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
+    ViewData["Title"] = "AddPayment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<form class="needs-validation" novalidate>
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Edit Payment:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="Type">Patient</label>
+                        <select id="Type" class="form-control">
+                            <option selected>Select Patient</option>
+                            <option>p1</option>
+                            <option>p2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Type">Doctor</label>
+                        <select id="Type" class="form-control">
+                            <option selected>Select Doctor</option>
+                            <option>d1</option>
+                            <option>d2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Type">Mobile No</label>
+                        <select id="Type" class="form-control">
+                            <option selected>Select Patient</option>
+                            <option>335345354</option>
+                            <option>983249234</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Service">Service</label>
+                        <select id="Service" class="form-control">
+                            <option selected>Select Service</option>
+                            <option>Service1</option>
+                            <option>servic2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Mobile No">Service Price</label>
+                        <input type="text" id="Service Price" placeholder="Service Price" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Complaint Price">Complaint Price</label>
+                        <input type="text" id="Complaint Price" placeholder="Complaint Price" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Advice Price">Advice Price</label>
+                        <input type="text" id="Advice Price" placeholder="Advice Price" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Medicine Price">Medicine Price</label>
+                        <input type="text" id="Medicine Price Price" placeholder="Medicine Price" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Date</label>
+                        <input type="date" id=" Date" placeholder="Date" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="Created By">Payment Done</label>
+                        <input type="text" id="Payment Done" placeholder="Payment Done" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="Created By">Due Payment</label>
+                        <input type="text" id="Due Payment" placeholder="Due Payment" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="Discount">Discount</label>
+                        <input type="text" id="Discount" placeholder="Discount" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Total Amount">Total Amount</label>
+                        <input type="text" id="Total Amount" placeholder="Total Amount" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Type">Payment Type</label>
+                        <select id="Type" class="form-control">
+                            <option selected>Select type</option>
+                            <option>Cash</option>
+                            <option>Check</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4" style="padding: 35px 0px 0px 0px;">
+                        <label for="Active">Active</label>
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <a href="\Account\EditPayment" class="btn btn-secondary float-left" style="margin-right: 10px;">Cancel</a>
+                    <a href="\Account\AllPayment" type="Submit" class="btn btn-success float-left">Update</a>
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+
+
+
+
+
+

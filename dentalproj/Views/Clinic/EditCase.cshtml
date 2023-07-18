@@ -1,0 +1,645 @@
+﻿
+@{
+    ViewData["Title"] = "EditCase";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section styles{
+		<!-- Select2 -->
+		<link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+		<link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+
+}
+<form class="needs-validation" novalidate>
+
+
+
+	<section class="content">
+
+		<div class="card card-primary">
+			<div class="card-body">
+				<div class="col-md-12">
+					<!-- Form Element sizes -->
+					<div>
+						<div class="d-flex justify-content-between align-items-center">
+							<h4><b><u>Edit Case:</u></b></h4>
+						</div>
+					</div>
+				</div>
+						<div class="form-group col-md-3">
+							<label for="Facing problem">Case Number</label>
+							<input type="text" placeholder="Case Number" class="form-control" id="Case Number">
+						</div>
+
+					</div>
+				</div>
+				<h3 class="widget-title">Add Patient</h3>
+				<div class="form-row">
+					<div class="form-group col-md-2">
+
+
+						<div class="form-group col-md-3">
+							<label for="Patient Name">Patient</label>
+							<select class="js-example-basic-single col-md-3" name="state" style="width: 150px;">
+								<option>Alabama</option>
+								<option>Alabama</option>
+								<option>Alabama</option>
+								<option>Alabama</option>
+								<option>Alabama</option>
+								<option>Wyoming</option>
+							</select>
+						</div>
+					</div>
+
+
+					<div class="form-group col-md-2">
+						<label for="dob">Date</label>
+						<input type="date" placeholder="Date" class="form-control" id="date">
+					</div>
+
+					<div class="form-group col-md-2">
+						<label for="Dental History">Dental History</label>
+						<input type="text" placeholder="Dental History" class="form-control" id="Dental History">
+					</div>
+					<div class="form-group col-md-2">
+						<label for="Facing problem">Facing problem</label>
+						<input type="text" placeholder="Facing problem" class="form-control" id="Facing problem">
+					</div>
+
+					<div class="col-md-12">
+						<h3 class="widget-title">Treatment</h3>
+
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-">
+									<label for="Patient Name">Teeth No.</label>
+									<select class="js-example-basic-single col-md-" name="Number" style="width: 100px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="Patient Name">Treatment</label>
+									<select class="js-example-basic-single col-md-2" name="state" style="width: 150px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="discharge-date">Comment</label>
+									<input type="text" placeholder="Comment" class="form-control" id="Rate">
+								</div>
+								<div class="form-group col-md-2">
+									<label for="discharge-date">Date</label>
+									<input type="date" placeholder="Date" class="form-control" id="Date">
+								</div>
+								<div class="form-group col-md-1">
+									<label for="discharge-date">Rate</label>
+									<input type="text" placeholder="Rate" class="form-control" id="Rate">
+								</div>
+								<div class="form-group col-md-2">
+									<label for="Patient Name">Doctor</label>
+									<select class="js-example-basic-single col-md-2" name="state" style="width: 150px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+
+								<div class="form-group mb-2" style="padding: 30px 0px 0px 0px;">
+									<button type="submit" class="btn btn-primary btn-md">Add</button>
+								</div>
+							</div>
+
+
+							<div class="col-md-12">
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>Id</th>
+												<th>Treatment</th>
+												<th>Comment</th>
+												<th>Date</th>
+												<th>Rate</th>
+												<th>Doctor</th>
+												<th>Action</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+
+										</tbody>
+									</table>
+
+
+								</div>
+							</div>
+						</form>
+					</div>
+
+
+					<div class="col-md-12">
+						<h3 class="widget-title">Complaints</h3>
+
+						<form>
+							<div class="form-row">
+
+								<div class="form-group col-md-4">
+									<label>Complaints</label>
+									<select class="js-example-basic-single col-md-4" name="Complaints" style="width: 250px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group col-md-3">
+									<label for="discharge-date">Date</label>
+									<input type="date" placeholder="Date" class="form-control" id="Date">
+								</div>
+								<div class="form-group mb-2" style="padding: 30px 0px 0px 0px;">
+									<button type="submit" class="btn btn-primary btn-md">Add</button>
+								</div>
+							</div>
+
+
+							<div class="col-md-12">
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>Complaints Name</th>
+												<th>Date</th>
+												<th>Action</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+											</tr>
+											<tr>
+
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+
+										</tbody>
+									</table>
+
+
+								</div>
+							</div>
+						</form>
+					</div>
+
+
+
+					<div class="col-md-12">
+						<h3 class="widget-title">Advice</h3>
+
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-">
+									<label for="Patient Name">Teeth No.</label>
+									<select class="js-example-basic-single col-md-" name="Number" style="width: 100px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="Patient Name">Advice</label>
+									<select class="js-example-basic-single col-md-2" name="state" style="width: 150px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="Comment">Comment</label>
+									<input type="text" placeholder="Comment" class="form-control" id="Comment">
+								</div>
+
+								<div class="form-group col-md-2">
+									<label for="discharge-date">Rate</label>
+									<input type="text" placeholder="Rate" class="form-control" id="Rate">
+								</div>
+								<div class="form-group col-md-2">
+									<label for="discharge-date">Date</label>
+									<input type="date" placeholder="Date" class="form-control" id="Date">
+								</div>
+								<div class="form-group col-md-2">
+									<label for="Patient Name">Doctor</label>
+									<select class="js-example-basic-single col-md-2" name="state" style="width: 150px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group mb-2"  style="padding: 30px 0px 0px 0px;">
+									<button type="submit" class="btn btn-primary btn-md">Add</button>
+								</div>
+							</div>
+
+
+							<div class="col-md-12">
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>Teeth No</th>
+												<th>Advice</th>
+												<th>Comment</th>
+												<th>Date</th>
+												<th>Rate</th>
+												<th>Doctor</th>
+												<th>Action</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+
+										</tbody>
+									</table>
+
+									<!--Export links-->
+									@*<nav aria-label="Page navigation example">
+									<ul class="pagination justify-content-center export-pagination">
+									<li class="page-item">
+									<a class="page-link" href="#"><span class="ti-download"></span> csv</a>
+									</li>
+									<li class="page-item">
+									<a class="page-link" href="#"><span class="ti-printer"></span>  print</a>
+									</li>
+									<li class="page-item">
+									<a class="page-link" href="#"><span class="ti-file"></span> PDF</a>
+									</li>
+									<li class="page-item">
+									<a class="page-link" href="#"><span class="ti-align-justify"></span> Excel</a>
+									</li>
+									</ul>
+									</nav>*@
+									<!-- /Export links-->
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="col-md-12">
+						<h3 class="widget-title">Observation</h3>
+
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-">
+									<label for="Patient Name">Teeth No.</label>
+									<select class="js-example-basic-single col-md-" name="Number" style="width: 100px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="Patient Name">Observation</label>
+									<select class="js-example-basic-single col-md-2" name="Observation" style="width: 150px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="Comment">Comment</label>
+									<input type="text" placeholder="Comment" class="form-control" id="Comment">
+								</div>
+
+								<div class="form-group mb-2"  style="padding: 30px 0px 0px 0px;">
+									<button type="submit" class="btn btn-primary btn-md">Add</button>
+								</div>
+							</div>
+
+
+							<div class="col-md-12">
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>Teeth No</th>
+												<th>Observation</th>
+												<th>Comment</th>
+												<th>Rate</th>
+												<th>Action</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+
+										</tbody>
+									</table>
+
+									<!--Export links-->
+									@*<nav aria-label="Page navigation example">
+									<ul class="pagination justify-content-center export-pagination">
+									<li class="page-item">
+									<a class="page-link" href="#"><span class="ti-download"></span> csv</a>
+									</li>
+									<li class="page-item">
+									<a class="page-link" href="#"><span class="ti-printer"></span>  print</a>
+									</li>
+									<li class="page-item">
+									<a class="page-link" href="#"><span class="ti-file"></span> PDF</a>
+									</li>
+									<li class="page-item">
+									<a class="page-link" href="#"><span class="ti-align-justify"></span> Excel</a>
+									</li>
+									</ul>
+									</nav>*@
+									<!-- /Export links-->
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="col-md-12">
+						<h3 class="widget-title">Medicine</h3>
+
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-2">
+									<label for="Patient Name">Medicine</label>
+									<select class="js-example-basic-single col-md-2" name="state" style="width: 150px;">
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Alabama</option>
+										<option>Wyoming</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="discharge-date">Qty</label>
+									<input type="text" placeholder="Qty" class="form-control" id="Qty">
+								</div>
+								<div class="form-group col-md-2">
+									<label for="Dosage">Dosage</label>
+									<input type="text" placeholder="Dosage" class="form-control" id="Dosage">
+								</div>
+								<div class="form-group col-md-3">
+									<label for="Instruction">Instruction</label>
+									<input type="text" placeholder="Instruction" class="form-control" id="Instruction">
+								</div>
+								<div class="form-group col-md-2">
+									<label for="Date">Date</label>
+									<input type="text" placeholder="Date" class="form-control" id="Date">
+								</div>
+								<div class="form-group mb-2" style="padding: 30px 0px 0px 0px;">
+									<button type="submit" class="btn btn-primary btn-md">Add</button>
+								</div>
+							</div>
+
+
+							<div class="col-md-12">
+
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>Medicine Name</th>
+												<th>Qty</th>
+												<th>Dosage</th>
+
+												<th>Instruction</th>
+												<th>Date</th>
+												<th>Action</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><span class="ti-trash"></span></td>
+
+											</tr>
+
+										</tbody>
+									</table>
+									 <div class="col-2">
+
+					<a href="\Clinic\Case" type="Submit" class="btn btn-success float-left">Submit</a>
+				</div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+
+
+			</div>
+		</div>
+	</section>
+</form>
+
+
+
+@section scripts{
+		<!-- Select2 -->
+		<script src="~/plugins/select2/js/select2.full.min.js"></script>
+
+
+		<script>
+				$(document).ready(function () {
+					$('.js-example-basic-single').select2();
+				});
+		</script>
+    }
+

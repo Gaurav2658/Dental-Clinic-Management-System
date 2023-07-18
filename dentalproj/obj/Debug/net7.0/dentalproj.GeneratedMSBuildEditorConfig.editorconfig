@@ -1,0 +1,409 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = dentalproj
+build_property.RootNamespace = dentalproj
+build_property.ProjectDir = D:\dentalproj\dentalproj\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\dentalproj\dentalproj
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/dentalproj/dentalproj/Views/Account/AddPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Account/AllPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBbGxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Account/EditPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0UGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Account/Receipt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWNlaXB0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AdviceMaster/AdviceCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aWNlTWFzdGVyXEFkdmljZUNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AdviceMaster/AdviceDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aWNlTWFzdGVyXEFkdmljZURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AdviceMaster/GetAllAdvice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aWNlTWFzdGVyXEdldEFsbEFkdmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AppointmentMaster/AppointCal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRNYXN0ZXJcQXBwb2ludENhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AppointmentMaster/AppointmentCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRNYXN0ZXJcQXBwb2ludG1lbnRDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AppointmentMaster/AppointmentDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRNYXN0ZXJcQXBwb2ludG1lbnREZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AppointmentMaster/GetAllAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRNYXN0ZXJcR2V0QWxsQXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Appointment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AttachmentMaster/AttachmentCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0YWNobWVudE1hc3RlclxBdHRhY2htZW50Q3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AttachmentMaster/AttachmentDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0YWNobWVudE1hc3RlclxBdHRhY2htZW50RGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/AttachmentMaster/GetAllAttachment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0YWNobWVudE1hc3RlclxHZXRBbGxBdHRhY2htZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CaseMaster/CaseCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZU1hc3RlclxDYXNlQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CaseMaster/CaseDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZU1hc3RlclxDYXNlRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CaseMaster/GetAllCase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZU1hc3RlclxHZXRBbGxDYXNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CaseMas/CaseCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZU1hc1xDYXNlQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CaseMas/CaseMasDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZU1hc1xDYXNlTWFzRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CaseMas/CaseView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZU1hc1xDYXNlVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CaseMas/GetAllCaseMas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZU1hc1xHZXRBbGxDYXNlTWFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CategoryMaster/CategoryCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlNYXN0ZXJcQ2F0ZWdvcnlDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CategoryMaster/CategoryDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlNYXN0ZXJcQ2F0ZWdvcnlEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/CategoryMaster/GetAllCat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlNYXN0ZXJcR2V0QWxsQ2F0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/AddAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEFkZEFwcG9pbnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/AddCase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEFkZENhc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/AddPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEFkZFBhdGllbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/Appointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEFwcG9pbnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/Case.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXENhc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/EditAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEVkaXRBcHBvaW50bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/EditCase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEVkaXRDYXNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/EditPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEVkaXRQYXRpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Clinic/Patient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXFBhdGllbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ComplaintMaster/ComplaintCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxhaW50TWFzdGVyXENvbXBsYWludENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ComplaintMaster/ComplaintDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxhaW50TWFzdGVyXENvbXBsYWludERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ComplaintMaster/GetAllComplaint.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxhaW50TWFzdGVyXEdldEFsbENvbXBsYWludC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Dental/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVudGFsXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFkZENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/AddItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFkZEl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/AddItemAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFkZEl0ZW1Bc3NpZ24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/AddItemConsumption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFkZEl0ZW1Db25zdW1wdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/AddUnit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFkZFVuaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/CategoryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XENhdGVnb3J5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEVkaXRDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/EditItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEVkaXRJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/EditItemAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEVkaXRJdGVtQXNzaWduLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/EditItemConsumption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEVkaXRJdGVtQ29uc3VtcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/EditUnit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEVkaXRVbml0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/Item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/ItemAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEl0ZW1Bc3NpZ24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/ItemConsumption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEl0ZW1Db25zdW1wdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Inventory/Unit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XFVuaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ItemAssignMaster/GetAllItemAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbUFzc2lnbk1hc3RlclxHZXRBbGxJdGVtQXNzaWduLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ItemAssignMaster/ItemAssignCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbUFzc2lnbk1hc3RlclxJdGVtQXNzaWduQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ItemAssignMaster/ItemAssignDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbUFzc2lnbk1hc3RlclxJdGVtQXNzaWduRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ItemMaster/GetAllItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbU1hc3RlclxHZXRBbGxJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ItemMaster/ItemCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbU1hc3RlclxJdGVtQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ItemMaster/ItemDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbU1hc3RlclxJdGVtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/MedicineMaster/GetAllMedicine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVNYXN0ZXJcR2V0QWxsTWVkaWNpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/MedicineMaster/MedicineCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVNYXN0ZXJcTWVkaWNpbmVDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/MedicineMaster/MedicineDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVNYXN0ZXJcTWVkaWNpbmVEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ObservationMaster/GetAllObservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YXRpb25NYXN0ZXJcR2V0QWxsT2JzZXJ2YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ObservationMaster/ObservationCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YXRpb25NYXN0ZXJcT2JzZXJ2YXRpb25DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ObservationMaster/ObservationDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YXRpb25NYXN0ZXJcT2JzZXJ2YXRpb25EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/PatientMaster/GetAllPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudE1hc3RlclxHZXRBbGxQYXRpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/PatientMaster/PatientCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudE1hc3RlclxQYXRpZW50Q3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/PatientMaster/PatientDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudE1hc3RlclxQYXRpZW50RGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/PatientMaster/PatientView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudE1hc3RlclxQYXRpZW50Vmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/PurchaseMaster/GetAllPurchase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VNYXN0ZXJcR2V0QWxsUHVyY2hhc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/PurchaseMaster/PurchaseCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VNYXN0ZXJcUHVyY2hhc2VDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/PurchaseMaster/PurchaseDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VNYXN0ZXJcUHVyY2hhc2VEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Reports/AppointmentAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xBcHBvaW50bWVudEFuYWx5c2lzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Reports/CaseAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xDYXNlQW5hbHlzaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Reports/PaymentAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xQYXltZW50QW5hbHlzaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Reports/StockAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xTdG9ja0FuYWx5c2lzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Reports/TransactionAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xUcmFuc2FjdGlvbkFuYWx5c2lzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Reports/TreatmentAnalysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xUcmVhdG1lbnRBbmFseXNpcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ServiceMaster/GetAllService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU1hc3RlclxHZXRBbGxTZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ServiceMaster/ServiceCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU1hc3RlclxTZXJ2aWNlQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ServiceMaster/ServiceDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU1hc3RlclxTZXJ2aWNlRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ShadeMaster/GetAllShade.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhZGVNYXN0ZXJcR2V0QWxsU2hhZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ShadeMaster/ShadeCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhZGVNYXN0ZXJcU2hhZGVDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/ShadeMaster/ShadeDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhZGVNYXN0ZXJcU2hhZGVEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/SupplierMaster/GetAllSupplier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJNYXN0ZXJcR2V0QWxsU3VwcGxpZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/SupplierMaster/SupplierCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJNYXN0ZXJcU3VwcGxpZXJDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/SupplierMaster/SupplierDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJNYXN0ZXJcU3VwcGxpZXJEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/UnitMaster/GetAllUnit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdE1hc3RlclxHZXRBbGxVbml0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/UnitMaster/UnitCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdE1hc3RlclxVbml0Q3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/UnitMaster/UnitDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdE1hc3RlclxVbml0RGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/UserMaster/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hc3RlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/UserMaster/DeleteUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hc3RlclxEZWxldGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/UserMaster/GetAllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hc3RlclxHZXRBbGxVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dentalproj/dentalproj/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xia7if7dys

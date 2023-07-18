@@ -1,0 +1,97 @@
+﻿@model DataAccessLibrary.Model.UserMaster.UserMaster
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card card-primary">
+    <div class="card-body">
+        <div class="col-md-12">
+            <!-- Form Element sizes -->
+            <div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4><b><u>Add User:</u></b></h4>
+                </div>
+            </div>
+        </div>
+        <div>
+            <form class="needs-validation" asp-action="Create" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="Email">Email</label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="Password">Password</label>
+                        <input asp-for="Password" type="password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="Name">Name</label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="Type">Type</label>
+                        <select asp-for="Type" class="form-control">
+                            <option value="">Select one</option>
+                            <option value="1">Doctor</option>
+                            <option value="2">Receptionist</option>
+                        </select>
+                        <span asp-validation-for="Type" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="MobileNo">Mobile No</label>
+                        <input asp-for="MobileNo" type="number" class="form-control" />
+                        <span asp-validation-for="MobileNo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-11">
+                        <label asp-for="Address">Address</label>
+                        <textarea asp-for="Address" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                    @*<div class="form-group col-md-4">
+                        <label asp-for="CreatedDate">Created Date</label>
+                        <input asp-for="CreatedDate" class="form-control" />
+                        <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="CreatedBy">Created By</label>
+                        <input asp-for="CreatedBy" class="form-control" />
+                        <span asp-validation-for="CreatedBy" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="ModifyDate">Modify Date</label>
+                        <input asp-for="ModifyDate" class="form-control" />
+                        <span asp-validation-for="ModifyDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="ModifyBy">Modify By</label>
+                        <input asp-for="ModifyBy" class="form-control" />
+                        <span asp-validation-for="ModifyBy" class="text-danger"></span>
+                    </div>*@
+                    <div class="form-group col-md-4" >
+                        <label asp-for="IsActive">Active</label>
+                        <input asp-for="IsActive" type="checkbox" />
+                        <span asp-validation-for="IsActive" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <input type="submit" value="Save" class="btn btn-success float-left" style="margin-right: 10px;" />
+                    <a href="\UserMaster\GetAllUsers" class="btn btn-secondary float-left" style="margin-right: 10px;">Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

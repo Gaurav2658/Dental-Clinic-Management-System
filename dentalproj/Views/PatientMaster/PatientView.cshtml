@@ -1,0 +1,243 @@
+﻿@model DataAccessLibrary.Model.PatientMaster
+
+@{
+    ViewData["Title"] = "PatientView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="needs-validation" asp-action="PatientView" novalidate>
+	<section class="content">
+
+		<div class="card card-primary">
+			<div class="card-body">
+				<div class="col-md-12">
+					<!-- Form Element sizes -->
+					<div>
+						<div class="d-flex justify-content-between align-items-center">
+							<h4><b><u>Patient Detail:</u></b></h4>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-3">
+						<label asp-for="RegNo">Reg No</label>
+						<input asp-for="RegNo" class="form-control" readonly />
+						<span asp-validation-for="RegNo" class="text-danger"></span>
+					</div>
+					<div class="form-group col-md-3">
+						<label asp-for="PatientName">Patient Name</label>
+						<input asp-for="PatientName" class="form-control" readonly />
+						<span asp-validation-for="PatientName" class="text-danger"></span>
+					</div>
+					<div class="form-group col-md-3">
+						<label asp-for="DateOfBirth">DateOfBirth</label>
+						<input asp-for="DateOfBirth" type="date" class="form-control" readonly />
+
+					</div>
+
+					<div class="form-group col-md-3">
+						<label asp-for="Age">Age</label>
+						<input asp-for="Age" class="form-control" readonly />
+
+					</div>
+					<div class="form-group col-md-3">
+						<label asp-for="PhoneNo">Phone No</label>
+						<input asp-for="PhoneNo" class="form-control" type="number" readonly />
+						<span asp-validation-for="PhoneNo" class="text-danger"></span>
+					</div>
+					<div class="form-group col-md-3">
+						<label asp-for="Email">Email</label>
+						<input asp-for="Email" class="form-control" readonly />
+						<span asp-validation-for="Email" class="text-danger"></span>
+					</div>
+
+					<div class="form-group col-md-4">
+						<label asp-for="Gender">Gender</label>
+						<select asp-for="Gender" class="form-control" disabled>
+							<option value="">Select one</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select>
+						<span asp-validation-for="Gender" class="text-danger"></span>
+					</div>
+					<div class="form-group col-md-11">
+						<label asp-for="Address">Address</label>
+						<textarea asp-for="Address" class="form-control" rows="3" readonly></textarea>
+						<span asp-validation-for="Address" class="text-danger"></span>
+					</div>
+					<div class="col-md-12">
+						<header><b><h4>Emergency Contact Information</h4></b></header>
+					</div>
+					<div class="form-group col-md-4">
+						<label asp-for="PersonName">Person Name</label>
+						<input asp-for="PersonName" class="form-control" readonly />
+
+					</div>
+					<div class="form-group col-md-4">
+						<label asp-for="PersonPhoneNo">Person PhoneNo</label>
+						<input asp-for="PersonPhoneNo" class="form-control" type="number" readonly />
+
+					</div>
+					<div class="form-group col-md-4">
+						<label asp-for="Relation">Relation</label>
+						<input asp-for="Relation" class="form-control" readonly />
+
+					</div>
+					<div class="form-group col-md-11">
+						<label asp-for="PersonAddress">Person Address</label>
+						<textarea asp-for="PersonAddress" class="form-control" rows="3" readonly></textarea>
+
+					</div>
+
+					<h3 class="widget-title col-md-12 ">Dental History</h3>
+
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox" >
+								<input class="custom-control-input" type="checkbox" asp-for="HBadBreathing" disabled/>
+								<label class="custom-control-label" asp-for="HBadBreathing">Bad Breathing</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="HToothDecay" disabled />
+								<label class="custom-control-label" asp-for="HToothDecay">Tooth Decay</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="HMouthSores" disabled />
+								<label class="custom-control-label" asp-for="HMouthSores">Mouth Sores</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="HGum" disabled />
+								<label class="custom-control-label" asp-for="HGum">Gum</label>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="HToothErosion" disabled />
+								<label class="custom-control-label" asp-for="HToothErosion">ToothErosion</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="HToothSensitivity" disabled />
+								<label class="custom-control-label" asp-for="HToothSensitivity">Tooth Sensitivity</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="HToothAndDentalEmergency" disabled />
+								<label class="custom-control-label" asp-for="HToothAndDentalEmergency">Tooth And Dental Emergency</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group col-md-11">
+						<label asp-for="RemarkHistory">Remark History</label>
+						<textarea asp-for="RemarkHistory" class="form-control" rows="2" readonly></textarea>
+
+					</div>
+					<h3 class="widget-title col-md-12 ">What Kind Of Problem You Are Faceing</h3>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+
+								<input class="custom-control-input" type="checkbox" asp-for="PBadBreathing" disabled />
+								<label class="custom-control-label" asp-for="PBadBreathing">Bad Breathing</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="PToothDecay" disabled />
+								<label class="custom-control-label" asp-for="PToothDecay">Tooth Decay</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="PMouthSores" disabled />
+								<label class="custom-control-label" asp-for="PMouthSores">Mouth Sores</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="PGum" disabled />
+								<label class="custom-control-label" asp-for="PGum">Gum</label>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="PToothErosion" disabled />
+								<label class="custom-control-label" asp-for="PToothErosion">ToothErosion</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="PToothSensitivity" disabled />
+								<label class="custom-control-label" asp-for="PToothSensitivity">Tooth Sensitivity</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-check col-md-6 mb-2">
+						<div class="text-Right">
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input" type="checkbox" asp-for="PToothAndDentalEmergency" disabled />
+								<label class="custom-control-label" asp-for="PToothAndDentalEmergency">Tooth And Dental Emergency</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group col-md-11">
+						<label asp-for="RemarkProblem">Remark</label>
+						<textarea asp-for="RemarkProblem" class="form-control" rows="2" readonly></textarea>
+
+					</div>
+
+				</div>
+				<div class="col-2">
+
+					<a href="\PatientMaster\GetAllPatient" class="btn btn-secondary float-left" style="margin-right: 10px;">Back</a>
+				</div>
+			</div>
+			<!-- /.card-body -->
+		</div>
+	</section>
+</form>

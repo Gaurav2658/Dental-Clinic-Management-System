@@ -1,0 +1,97 @@
+﻿@model DataAccessLibrary.Model.PurchaseMaster
+
+@{
+    ViewData["Title"] = "PurchaseCreate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+
+}
+
+
+<form class="needs-validation" novalidate method="post">
+
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Add Purchase:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                   
+                    <div class="form-group col-md-4">
+                        <label asp-for="BillNo" class="control-label"></label>
+                        <input asp-for="BillNo" class="form-control" />
+                        <span asp-validation-for="BillNo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="ItemId">Item</label>
+                        <select asp-for="ItemId" asp-items="ViewBag.Item" class="form-control custom-select js-example-basic-single">
+
+                            <option value="">--Select Supplier--</option>
+                           
+
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="SId">Supplier</label>
+                        <select asp-for="SId" asp-items="ViewBag.Suppliers" class="form-control custom-select js-example-basic-single" >
+
+                            <option value="">--Select Supplier--</option>
+                           
+
+                        </select>
+                    </div>
+               
+                    <div class="form-group col-md-4">
+                        <label asp-for="Qty" class="control-label"></label>
+                        <input asp-for="Qty" class="form-control" />
+                        <span asp-validation-for="Qty" class="text-danger"></span>
+                    </div>
+                   
+
+                    <div class="form-group col-md-4">
+                        <label asp-for="Rate" class="control-label"></label>
+                        <input asp-for="Rate" class="form-control" />
+                        <span asp-validation-for="Rate" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label asp-for="TotalAmount" class="control-label"></label>
+                        <input asp-for="TotalAmount"  class="form-control" readonly />
+                        <span asp-validation-for="TotalAmount" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <input type="submit" value="Save" class="btn btn-success float-left" style="margin-right: 10px;" />
+                    <a href="\PurchaseMaster\GetAllPurchase" class="btn btn-secondary float-left" style="margin-right: 10px;">Back</a>
+
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+@section scripts{
+    <!-- Select2 -->
+     <script src="~/plugins/select2/js/select2.full.min.js"></script>
+
+
+    <script>
+            $(document).ready(function () {
+                $('.js-example-basic-single').select2();
+            });
+    </script>
+    }

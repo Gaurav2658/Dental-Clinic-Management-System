@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+}
+<div class="card">
+    <div class="col-md-12">
+        <!-- Form Element sizes -->
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2><b>Category List</b></h2>
+                <div>
+                    <a href="\Inventory\AddCategory" class="btn btn-block btn-outline-primary">Add Category</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>OrderBy</th>
+                    <th>Active</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cat1</td>
+                    <td>1</td>
+                    <Td>Active</Td>
+                    <td>
+
+                        <a href="/Inventory/EditCategory"> <i class="fas fa-pencil-alt"></i> </a>
+                        <a href="/Inventory/Delete"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>cat1</td>
+                    <td>1</td>
+                    <Td>Active</Td>
+                    <td>
+
+                        <a href="/Inventory/EditCategory"> <i class="fas fa-pencil-alt"></i> </a>
+                        <a href="/Inventory/Delete"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                   <tr>
+                    <td>cat1</td>
+                    <td>1</td>
+                    <Td>Active</Td>
+                    <td>
+
+                        <a href="/Inventory/EditCategory"> <i class="fas fa-pencil-alt"></i> </a>
+                        <a href="/Inventory/Delete"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                      <tr>
+                    <td>cat1</td>
+                    <td>1</td>
+                    <Td>Active</Td>
+                    <td>
+
+                        <a href="/Inventory/EditCategory"> <i class="fas fa-pencil-alt"></i> </a>
+                        <a href="/Inventory/Delete"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+@section scripts{
+    <script src="~/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/plugins/jszip/jszip.min.js"></script>
+    <script src="~/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+
+
+    </script>
+    }
+
+

@@ -1,0 +1,88 @@
+﻿@model DataAccessLibrary.Model.ItemAssignMaster
+
+@{
+    ViewData["Title"] = "ItemAssignCreate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+
+}
+
+
+<form class="needs-validation" novalidate method="post">
+
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Add ItemAssign:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="ItemId">Item</label>
+                        <select asp-for="ItemId" asp-items="ViewBag.Item" class="form-control custom-select js-example-basic-single">
+                            <option value="">--Select Item--</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="CatId">Category</label>
+                        <select asp-for="CatId" asp-items="ViewBag.Cat" class="form-control custom-select js-example-basic-single">
+                            <option value="">--Select Category--</option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group col-md-4">
+                        <label asp-for="OpeningQty" class="control-label"></label>
+                        <input asp-for="OpeningQty" class="form-control" />
+                        <span asp-validation-for="OpeningQty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="OpeningRate" class="control-label"></label>
+                        <input asp-for="OpeningRate" class="form-control" />
+                        <span asp-validation-for="OpeningRate" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label asp-for="TotalAmount" class="control-label"></label>
+                        <input asp-for="TotalAmount" class="form-control" readonly/>
+                        <span asp-validation-for="TotalAmount" class="text-danger"></span>
+                    </div>
+
+                    
+                </div>
+                <div class="col-2">
+                    <input type="submit" value="Save" class="btn btn-success float-left" style="margin-right: 10px;" />
+                    <a href="\ItemAssignMaster\GetAllItemAssign" class="btn btn-secondary float-left" style="margin-right: 10px;">Back</a>
+
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+@section scripts{
+    <!-- Select2 -->
+    <script src="~/plugins/select2/js/select2.full.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+    }

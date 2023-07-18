@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "AddAppointment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form class="needs-validation" novalidate>
+
+
+
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Add Appointment:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="Email">Patient Name</label>
+                        <input type="text" id="Patient Name" placeholder="Patient Name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="Doctor Name">Doctor Name</label>
+                        <select id="Type" class="form-control">
+                            <option selected>Select one</option>
+                            <option>Gaurav</option>
+                            <option>Amrit</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Date</label>
+                        <input type="date" id="Date" placeholder="Date" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="time" class="form-label">Time:</label>
+                        <input type="time" class="form-control" id="time" name="time" required>
+                    </div>
+                    <div class="form-group col-md-11">
+                        <label for="Problem">Problem</label>
+                        <textarea id="Problem" class="form-control" placeholder="Problem" rows="2"></textarea>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <a href="\Clinic\Appointment" class="btn btn-secondary float-left" style="margin-right: 10px;">Cancel</a>
+                    <a href="\Clinic\Appointment" type="Submit" class="btn btn-success float-left">Submit</a>
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+

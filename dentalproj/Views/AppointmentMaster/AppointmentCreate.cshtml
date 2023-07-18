@@ -1,0 +1,133 @@
+﻿@model DataAccessLibrary.Model.AppointmentMaster
+
+@{
+    ViewData["Title"] = "AppointmentCreate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+
+}
+
+
+<form id="appointmentForm" class="needs-validation" novalidate method="post">
+
+    <section class="content">
+
+        <div class="card card-primary">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <!-- Form Element sizes -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4><b><u>Add Appointment:</u></b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="PId">Patient Name</label>
+                        <select asp-for="PId" asp-items="ViewBag.Pat" class="form-control custom-select js-example-basic-single">
+                            <option value="">--Select Patient--</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="DId">Doctor Name</label>
+                        <select asp-for="DId" asp-items="ViewBag.Dr" class="form-control custom-select js-example-basic-single">
+                            <option value="">--Select Doctor--</option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group col-md-4">
+                        <label asp-for="Date" class="control-label"></label>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="TimeSlot" class="control-label"></label>
+                        <input asp-for="TimeSlot" class="form-control" />
+                        <span asp-validation-for="TimeSlot" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label asp-for="Status" class="control-label"></label>
+                        <input asp-for="Status" class="form-control"  />
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-group col-md-4">
+                        <label asp-for="Remark" class="control-label"></label>
+                        <input asp-for="Remark" class="form-control"  />
+                        <span asp-validation-for="Remark" class="text-danger"></span>
+                    </div>
+
+
+                </div>
+                <div class="col-2">
+                    <input type="submit" value="Save" class="btn btn-success float-left" style="margin-right: 10px;" id="saveButton" />
+                    <a href="\AppointmentMaster\AppointCal" class="btn btn-secondary float-left" style="margin-right: 10px;">Back</a>
+
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+    </section>
+</form>
+@section scripts{
+    <!-- Select2 -->
+    <script src="~/plugins/select2/js/select2.full.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+  @*  <script>
+        $(document).ready(function () {
+            // Submit form using AJAX when save button is clicked
+            $('#saveButton').click(function (e) {
+                e.preventDefault();
+
+                // Serialize form data
+                var formData = $('#appointmentForm').serialize();
+
+                // Send AJAX request to save the appointment
+                $.ajax({
+                    url: '@Url.Action("AppointmentCreate", "AppointmentMaster")',
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        // Handle success response
+                        if (response.success) {
+                            // Refresh the calendar to display the new appointment
+                            $('#calendar').fullCalendar('refetchEvents');
+                        } else {
+                            // Handle error response
+                            alert('Failed to save appointment. Please try again.');
+                        }
+                    },
+                    error: function () {
+                        // Handle AJAX error
+                        alert('Failed to save appointment. Please try again.');
+                    }
+                });
+            });
+
+            // Initialize the fullCalendar plugin
+            $('#calendar').fullCalendar({
+                // Configure calendar options
+                // ...
+            });
+        });
+    </script>*@
+
+    }

@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewData["Title"] = "Case";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+                @*
+    <style>
+        .table-container {
+            max-height: 400px; /* Adjust the height as per your requirement */
+            overflow-y: auto;
+        }
+    </style>*@
+}
+
+<div class="card">
+    <div class="col-md-12">
+        <!-- Form Element sizes -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h2><b>Case List</b></h2>
+            <div>
+                <a href="\Clinic\AddCase" class="btn btn-block btn-outline-primary">Add Case</a>
+            </div>
+        </div>
+        <!-- /.card-header -->
+
+        <div class="card-form">
+            <div class="table-container">
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>CaseNo.</th>
+                            <th>Patient</th>
+                            <th>Doctor</th>
+
+                            <th>Date</th>
+                            <th>Payable</th>
+                            <th>Pay Amount</th>
+                            <th>Due</th>
+                            <th>Status</th>
+
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Amrit</td>
+                            <td>123</td>
+                            <td>hitesh</td>
+                            <td>doctor</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                            <td>Active</td>
+                            <td>
+                                <a href="\Account\AddPayment"><i class="fas fa-rupee-sign"></i></a>
+
+                                <a href="/Clinic/EditPatient">
+                                    <i class="fas fa-pencil-alt">
+                                    </i>
+
+                                </a>
+                                <a href="/Clinic/Delete"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/plugins/jszip/jszip.min.js"></script>
+    <script src="~/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+}
